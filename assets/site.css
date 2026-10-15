@@ -167,6 +167,16 @@ figure.words.press .desc{display:block;color:var(--muted);font-size:14.5px;margi
 .g-own{--g:url(/assets/g/own.svg)}.g-stream{--g:url(/assets/g/stream.svg)}.g-watch{--g:url(/assets/g/watch.svg)}.g-follow{--g:url(/assets/g/follow.svg)}.g-read{--g:url(/assets/g/read.svg)}
 .more{margin:18px 0 0;font-size:14.5px;color:var(--muted)}
 .more a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-hi)}
+.charted{margin:32px 0 0;border-top:1px solid var(--line);padding:20px 0 0}
+.charted h2{font:600 11.5px var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--b);margin:0 0 14px}
+.charted .read{max-width:34em;margin:0 0 14px}
+ol.chart{list-style:none;margin:0;padding:0;max-width:34em}
+ol.chart li{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:6px 16px;align-items:baseline;padding:8px 0;border-top:1px solid var(--line-hi);font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+ol.chart li::before{content:none}
+ol.chart .pos{color:var(--ink);font-weight:700}
+ol.chart li.peak .pos{color:var(--b)}
+ol.chart a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line-hi);white-space:nowrap}
+.charted .note{max-width:34em;font-size:13.5px;color:var(--muted)}
 .received-log{margin:32px 0 0;border-top:1px solid var(--line);padding:20px 0 0}
 .received-log h2{font:600 11.5px var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--a);margin:0 0 18px}
 .log{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,19rem),1fr));gap:30px 36px}
