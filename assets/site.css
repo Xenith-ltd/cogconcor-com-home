@@ -176,7 +176,12 @@ ol.chart li::before{content:none}
 ol.chart .pos{color:var(--ink);font-weight:700}
 ol.chart li.peak .pos{color:var(--b)}
 ol.chart a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line-hi);white-space:nowrap}
-.charted .note{max-width:34em;font-size:13.5px;color:var(--muted)}
+.charted details.about{max-width:34em;margin:14px 0 0}
+.charted details.about summary{cursor:pointer;font:600 11.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);list-style:none}
+.charted details.about summary::-webkit-details-marker{display:none}
+.charted details.about summary::before{content:"+ ";color:var(--b)}
+.charted details.about[open] summary::before{content:"− "}
+.charted .note{max-width:34em;font-size:13.5px;color:var(--muted);margin:10px 0 0}
 .received-log{margin:32px 0 0;border-top:1px solid var(--line);padding:20px 0 0}
 .received-log h2{font:600 11.5px var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--a);margin:0 0 18px}
 .log{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,19rem),1fr));gap:30px 36px}
